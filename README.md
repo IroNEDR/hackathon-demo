@@ -9,7 +9,7 @@ A docker image is created, which only contains the trained model, the `requireme
 The `send_request.py` file is only used for local testing and is not part of the docker image.  
 The `train_model.py` file is only used to train the model localy on your machine and is also not part of the docker image.
 
-## How to run the project
+## How to run this project (Optional)
 This project is only intended to give you some inspiration. You don't need to run it yourself. However, if you want to run it, follow these steps:
 
 1. Clone the repository:
@@ -60,10 +60,7 @@ When you create your own Python project follow these steps:
 4. Activate the virtual environment:
     ```bash
     source env/bin/activate # On Mac or Linux
-    ```
-For Windows:
-    ```powershell
-    .\env\Scripts\activate
+    .\env\Scripts\activate # On Windows
     ```
 5. Install the packages from the requirements.txt file using pip:
     ```bash
@@ -73,15 +70,13 @@ For Windows:
     ```bash
     pip freeze > requirements.txt
     ```
-Your teammates can then install all the dependencies by running:
+    Your teammates can then install all the dependencies by running:
     ```bash
     pip install -r requirements.txt
     ```
-
 7. Create a .gitignore file in your project directory and [add this content](https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore) to it.
 8. Create a README.md file in your project directory and add a description of your project.
 9. Create a Dockerfile in your project and set it up similar to the one in this project.
-
 10. Create a new repository on GitHub and push your project to it:
     ```bash
     git init
